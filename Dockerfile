@@ -9,4 +9,3 @@ RUN apt-get install -y \
 WORKDIR /scaffold-docker
 COPY Gemfile Gemfile.lock /scaffold-docker/
 RUN bundle install
-CMD [ "bin/rails", "server", "-b", "0.0.0.0" ]
