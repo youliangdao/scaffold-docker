@@ -10,4 +10,4 @@ WORKDIR /scaffold-docker
 COPY Gemfile Gemfile.lock /scaffold-docker/
 RUN bundle install
 COPY . .
-CMD [ "bin/rails", "s" ]
+CMD [ "rails", "s" ]
