@@ -8,6 +8,6 @@ RUN apt-get install -y \
   yarn
 WORKDIR /scaffold-docker
 COPY Gemfile Gemfile.lock /scaffold-docker/
-RUN bundle install --path vendor/bundle
+RUN bundle install
 COPY . .
 CMD [ "rails", "s" ]
